@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angelo - Economia e Informatica</title>
+    <title>Angelo - Curriculum Vitae</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,45 +19,48 @@
             text-align: center;
             position: relative;
         }
-        h1 {
+        h1, h2 {
             margin: 0;
         }
         .container {
             padding: 20px;
             margin-bottom: 60px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
         }
-        .intro {
-            text-align: center;
-        }
-        .intro img {
-            width: 150px;
-            border-radius: 50%;
-            margin-top: 10px;
-        }
-        .section-title {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            text-align: center;
-            color: #4CAF50;
-        }
-        .content {
+        .info-boxes {
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 30px;
         }
-        .box {
+        .info-box {
             background-color: white;
-            margin: 15px;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center;
+            width: 30%;
         }
-        .box img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
+        .info-box h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .download-btn {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+        .download-btn:hover {
+            background-color: #45a049;
         }
         footer {
             background-color: #333;
@@ -105,11 +108,11 @@
 
 <header>
     <h1>Angelo</h1>
-    <p>Laureando in Economia e Informatica per l'Impresa</p>
+    <p>Curriculum Vitae</p>
     <div class="dropdown">
         <button class="dropbtn">Menu</button>
         <div class="dropdown-content">
-            <a href="cv.html">Curriculum Vitae</a>
+            <a href="index.html">Home</a>
             <a href="app.html">Scarica App</a>
             <a href="progetti.html">Progetti</a>
             <a href="blog.html">Blog</a>
@@ -118,30 +121,39 @@
 </header>
 
 <div class="container">
-    <section class="intro">
-        <img src="/api/placeholder/150/150" alt="Immagine Angelo">
-        <p>Ciao! Sono Angelo, studente universitario e laureando in Economia e Informatica per l'Impresa. Mi piace coniugare l'analisi economica con le tecnologie informatiche per trovare soluzioni innovative nel mondo del business.</p>
-    </section>
-    
-    <section>
-        <h2 class="section-title">Le mie competenze</h2>
-        <div class="content">
-            <div class="box">
-                <img src="/api/placeholder/300/200" alt="Economia">
-                <h3>Economia</h3>
-                <p>Conoscenze in analisi economica, micro e macroeconomia, e gestione aziendale.</p>
-            </div>
-            <div class="box">
-                <img src="/api/placeholder/300/200" alt="Informatica">
-                <h3>Informatica</h3>
-                <p>Esperto in programmazione, database, sviluppo web e soluzioni IT per le imprese.</p>
-            </div>
+    <div class="info-boxes">
+        <div class="info-box">
+            <h2>Formazione</h2>
+            <p><strong>Laurea in Economia e Informatica per l'Impresa</strong></p>
+            <p>Università Example, 2020 - presente</p>
+            <p>Principali materie: Economia, Informatica, Gestione aziendale, Sviluppo software</p>
         </div>
-    </section>
+        <div class="info-box">
+            <h2>Competenze</h2>
+            <ul>
+                <li>Analisi economica</li>
+                <li>Programmazione (Java, Python, JavaScript)</li>
+                <li>Sviluppo web (HTML, CSS, React)</li>
+                <li>Database management (SQL, MongoDB)</li>
+                <li>Business Intelligence</li>
+            </ul>
+        </div>
+        <div class="info-box">
+            <h2>Esperienza</h2>
+            <p><strong>Stage presso TechFinance Srl</strong></p>
+            <p>Giugno 2023 - Agosto 2023</p>
+            <ul>
+                <li>Sviluppo di un'applicazione web per l'analisi finanziaria</li>
+                <li>Collaborazione con il team di data analysis</li>
+            </ul>
+        </div>
+    </div>
+
+    <a href="#" class="download-btn">Scarica CV Completo (PDF)</a>
 </div>
 
 <footer>
-    <p>Contattami: angelo@example.com</p>
+    <p>© 2024 Angelo - Tutti i diritti riservati</p>
 </footer>
 
 </body>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angelo - Economia e Informatica</title>
+    <title>Angelo - Scarica la mia App</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,45 +19,36 @@
             text-align: center;
             position: relative;
         }
-        h1 {
+        h1, h2 {
             margin: 0;
         }
         .container {
             padding: 20px;
             margin-bottom: 60px;
-        }
-        .intro {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
             text-align: center;
         }
-        .intro img {
-            width: 150px;
-            border-radius: 50%;
-            margin-top: 10px;
-        }
-        .section-title {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            text-align: center;
-            color: #4CAF50;
-        }
-        .content {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .box {
+        .app-info {
             background-color: white;
-            margin: 15px;
+            margin-bottom: 20px;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center;
         }
-        .box img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
+        .download-btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .download-btn:hover {
+            background-color: #45a049;
         }
         footer {
             background-color: #333;
@@ -105,12 +96,12 @@
 
 <header>
     <h1>Angelo</h1>
-    <p>Laureando in Economia e Informatica per l'Impresa</p>
+    <p>Scarica la mia App</p>
     <div class="dropdown">
         <button class="dropbtn">Menu</button>
         <div class="dropdown-content">
+            <a href="index.html">Home</a>
             <a href="cv.html">Curriculum Vitae</a>
-            <a href="app.html">Scarica App</a>
             <a href="progetti.html">Progetti</a>
             <a href="blog.html">Blog</a>
         </div>
@@ -118,30 +109,23 @@
 </header>
 
 <div class="container">
-    <section class="intro">
-        <img src="/api/placeholder/150/150" alt="Immagine Angelo">
-        <p>Ciao! Sono Angelo, studente universitario e laureando in Economia e Informatica per l'Impresa. Mi piace coniugare l'analisi economica con le tecnologie informatiche per trovare soluzioni innovative nel mondo del business.</p>
-    </section>
-    
-    <section>
-        <h2 class="section-title">Le mie competenze</h2>
-        <div class="content">
-            <div class="box">
-                <img src="/api/placeholder/300/200" alt="Economia">
-                <h3>Economia</h3>
-                <p>Conoscenze in analisi economica, micro e macroeconomia, e gestione aziendale.</p>
-            </div>
-            <div class="box">
-                <img src="/api/placeholder/300/200" alt="Informatica">
-                <h3>Informatica</h3>
-                <p>Esperto in programmazione, database, sviluppo web e soluzioni IT per le imprese.</p>
-            </div>
-        </div>
-    </section>
+    <div class="app-info">
+        <h2>La mia App di Analisi Economica</h2>
+        <img src="/api/placeholder/300/300" alt="Screenshot dell'app">
+        <p>Questa app ti aiuta a analizzare dati economici in modo semplice e intuitivo. Perfetta per studenti e professionisti nel campo dell'economia e della finanza.</p>
+        <h3>Caratteristiche principali:</h3>
+        <ul>
+            <li>Analisi di trend economici</li>
+            <li>Grafici interattivi</li>
+            <li>Previsioni basate su machine learning</li>
+            <li>Compatibile con iOS e Android</li>
+        </ul>
+        <a href="#" class="download-btn">Scarica l'App</a>
+    </div>
 </div>
 
 <footer>
-    <p>Contattami: angelo@example.com</p>
+    <p>© 2024 Angelo - Tutti i diritti riservati</p>
 </footer>
 
 </body>

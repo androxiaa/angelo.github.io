@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angelo - Economia e Informatica</title>
+    <title>Angelo - Blog</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,45 +19,34 @@
             text-align: center;
             position: relative;
         }
-        h1 {
+        h1, h2 {
             margin: 0;
         }
         .container {
             padding: 20px;
             margin-bottom: 60px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
-        .intro {
-            text-align: center;
-        }
-        .intro img {
-            width: 150px;
-            border-radius: 50%;
-            margin-top: 10px;
-        }
-        .section-title {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            text-align: center;
-            color: #4CAF50;
-        }
-        .content {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .box {
+        .blog-post {
             background-color: white;
-            margin: 15px;
+            margin-bottom: 20px;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center;
         }
-        .box img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
+        .post-title {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        .post-meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .post-content {
+            line-height: 1.6;
         }
         footer {
             background-color: #333;
@@ -105,43 +94,49 @@
 
 <header>
     <h1>Angelo</h1>
-    <p>Laureando in Economia e Informatica per l'Impresa</p>
+    <p>Blog</p>
     <div class="dropdown">
         <button class="dropbtn">Menu</button>
         <div class="dropdown-content">
+            <a href="index.html">Home</a>
             <a href="cv.html">Curriculum Vitae</a>
             <a href="app.html">Scarica App</a>
             <a href="progetti.html">Progetti</a>
-            <a href="blog.html">Blog</a>
         </div>
     </div>
 </header>
 
 <div class="container">
-    <section class="intro">
-        <img src="/api/placeholder/150/150" alt="Immagine Angelo">
-        <p>Ciao! Sono Angelo, studente universitario e laureando in Economia e Informatica per l'Impresa. Mi piace coniugare l'analisi economica con le tecnologie informatiche per trovare soluzioni innovative nel mondo del business.</p>
-    </section>
-    
-    <section>
-        <h2 class="section-title">Le mie competenze</h2>
-        <div class="content">
-            <div class="box">
-                <img src="/api/placeholder/300/200" alt="Economia">
-                <h3>Economia</h3>
-                <p>Conoscenze in analisi economica, micro e macroeconomia, e gestione aziendale.</p>
-            </div>
-            <div class="box">
-                <img src="/api/placeholder/300/200" alt="Informatica">
-                <h3>Informatica</h3>
-                <p>Esperto in programmazione, database, sviluppo web e soluzioni IT per le imprese.</p>
-            </div>
+    <article class="blog-post">
+        <h2 class="post-title">L'importanza dell'integrazione tra economia e informatica</h2>
+        <div class="post-meta">Pubblicato il 18 settembre 2024</div>
+        <div class="post-content">
+            <p>Nel mondo aziendale moderno, l'integrazione tra economia e informatica è diventata fondamentale. Le aziende che riescono a sfruttare al meglio questa sinergia sono quelle che ottengono i migliori risultati...</p>
+            <p><a href="#">Continua a leggere</a></p>
         </div>
-    </section>
+    </article>
+
+    <article class="blog-post">
+        <h2 class="post-title">Machine Learning: il futuro dell'analisi economica</h2>
+        <div class="post-meta">Pubblicato il 10 settembre 2024</div>
+        <div class="post-content">
+            <p>Il machine learning sta rivoluzionando il modo in cui analizziamo i dati economici. Grazie a questa tecnologia, possiamo ora prevedere trend di mercato con una precisione mai vista prima...</p>
+            <p><a href="#">Continua a leggere</a></p>
+        </div>
+    </article>
+
+    <article class="blog-post">
+        <h2 class="post-title">Come ho sviluppato la mia prima app di analisi finanziaria</h2>
+        <div class="post-meta">Pubblicato il 1 settembre 2024</div>
+        <div class="post-content">
+            <p>In questo post, condivido la mia esperienza nello sviluppo della mia prima app di analisi finanziaria. Dall'idea iniziale alla pubblicazione, ecco tutti i passaggi che ho seguito...</p>
+            <p><a href="#">Continua a leggere</a></p>
+        </div>
+    </article>
 </div>
 
 <footer>
-    <p>Contattami: angelo@example.com</p>
+    <p>© 2024 Angelo - Tutti i diritti riservati</p>
 </footer>
 
 </body>
